@@ -129,11 +129,6 @@ m_dacOverflow(0U),
 m_watchdog(0U),
 m_lockout(false)
 {
-  ::memset(m_rrcState,      0x00U, 70U * sizeof(q15_t));
-//  ::memset(m_gaussianState, 0x00U, 40U * sizeof(q15_t));
-  ::memset(m_boxcarState,   0x00U, 30U * sizeof(q15_t));
-  ::memset(m_dcState,       0x00U,  4U * sizeof(q31_t));
-
 #if defined (SAMP_24KHZ)
   ::memset(m_rrcState,      	0x00U,   70U * sizeof(q15_t));
 //  ::memset(m_gaussianState, 	0x00U,   40U * sizeof(q15_t));
