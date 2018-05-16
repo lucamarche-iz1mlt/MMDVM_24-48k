@@ -100,4 +100,3 @@ bool CRSSIRB::hasOverflowed()
 
   return overflow;
 }
-
