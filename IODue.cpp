@@ -159,8 +159,8 @@ void CIO::startInt()
 	#endif
 	#if defined (SAMP_48KHZ)
   t->TC_RC  = 875;                            // Counter resets on RC, so sets period in terms of 42MHz internal clock
-  t->TC_RA  = 440;                            // Roughly square wave
-	#endif
+  t->TC_RA  = 438;  						  // Roughly square wave
+    #endif
 #endif
   t->TC_CMR = (t->TC_CMR & 0xFFF0FFFF) | TC_CMR_ACPA_CLEAR | TC_CMR_ACPC_SET;  // Set clear and set from RA and RC compares
   t->TC_CCR = TC_CCR_CLKEN | TC_CCR_SWTRG;    // re-enable local clocking and switch to hardware trigger source.
@@ -253,4 +253,3 @@ void CIO::delayInt(unsigned int dly)
 }
 
 #endif
-

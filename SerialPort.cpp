@@ -78,17 +78,17 @@ const uint8_t MMDVM_DEBUG5       = 0xF5U;
 
 #if defined (SAMP_24KHZ)
 	#if defined(EXTERNAL_OSC)
-#define DESCRIPTION              "MMDVM 20180226 TCXO 24Khz(D-Star/DMR/System Fusion/P25/NXDN/RSSI/CW Id)"
+#define DESCRIPTION              "MMDVM 20180516 TCXO 24Khz(D-Star/DMR/System Fusion/P25/NXDN)"
 	#else
-#define DESCRIPTION              "MMDVM 20180226 24Khz(D-Star/DMR/System Fusion/P25/NXDN/RSSI/CW Id)"
+#define DESCRIPTION              "MMDVM 20180516 24Khz(D-Star/DMR/System Fusion/P25/NXDN)"
 	#endif
 #endif
 
 #if defined (SAMP_48KHZ)
 	#if defined(EXTERNAL_OSC)
-#define DESCRIPTION              "MMDVM 20180226 TCXO 48Khz(D-Star/DMR/System Fusion/P25/NXDN/RSSI/CW Id)"
+#define DESCRIPTION              "MMDVM 20180516 TCXO 48Khz(D-Star/DMR/System Fusion/P25/NXDN)"
 	#else
-#define DESCRIPTION              "MMDVM 20180226 48Khz(D-Star/DMR/System Fusion/P25/NXDN/RSSI/CW Id)"
+#define DESCRIPTION              "MMDVM 20180516 48Khz(D-Star/DMR/System Fusion/P25/NXDN)"
 	#endif
 #endif
 

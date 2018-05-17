@@ -70,7 +70,7 @@
 // #define USE_DCBLOCKER
 
 // Selection different sampling
-//#define SAMP_24KHZ						//Smapling 24khz
+// #define SAMP_24KHZ						//Smapling 24khz
 #define SAMP_48KHZ							//Sampling 48khz
 
 #endif

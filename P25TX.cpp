@@ -25,6 +25,7 @@
 
 #if defined (SAMP_24KHZ)
 // Generated using rcosdesign(0.2, 8, 5, 'normal') in MATLAB
+// numTaps = 40, L = 5
 static q15_t RC_0_2_FILTER[] = {-897, -1636, -1840, -1278, 0, 1613, 2936, 3310, 2315, 0, -3011, -5627, -6580, -4839,
                                 0, 7482, 16311, 24651, 30607, 32767, 30607, 24651, 16311, 7482, 0, -4839, -6580, -5627,
                                -3011, 0, 2315, 3310, 2936, 1613, 0, -1278, -1840, -1636, -897, 0}; // numTaps = 40, L = 5
@@ -66,7 +67,7 @@ const q15_t P25_LEVELD = -1260;
 const uint8_t P25_START_SYNC = 0x77U;
 
 CP25TX::CP25TX() :
-m_buffer(1500U),
+m_buffer(4000U),
 m_modFilter(),
 m_lpFilter(),
 m_modState(),
